@@ -1,4 +1,5 @@
-/* Discrete Mathematics Example Problems
+/* 
+* Discrete Mathematics Example Problems
 * Practicing the concept of set combinations and permuations
 * Class Notes 11/8/2023
 */
