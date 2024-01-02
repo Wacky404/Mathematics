@@ -7,7 +7,6 @@
 */
 #include <vector>
 #include <iostream>
-#include <cmath>
 #include <algorithm>
 
 // Make a function that returns the number factorial: 
@@ -33,7 +32,7 @@ int calculate_factorial(int n){
 
 int main(){
     std::cout << "What is the number you want the factorial for (integer; max 19): "; 
-    int n; 
+    int n;  
     std::cin >> n; 
     std::cout << "\nThis is the factorial of " << n << " is " << calculate_factorial(n); //Can work on combinations, factorial works.  
     return 0; 
