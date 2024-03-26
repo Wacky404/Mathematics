@@ -32,7 +32,6 @@ def headers(left, op, right):
     start = str(left)  # .strip('[]').strip("''")
     end = str(right)  # .strip('[]').strip("''")
 
-    # Don't know what I'm doing with this yet
     operator = op
     # Example: P ^ Q TruthTable
     #  _ _ _ _ _ _ _ _
@@ -48,9 +47,31 @@ def headers(left, op, right):
     #  - - - - - - - -
     # False = 0 True = 1
 
+    # This is where I will pass params to generate
+    # truth table.
+    table_gen(start, operator, end)
+
     # table = np.array()
     final = f"{start} {operator} {end}"
     return final
+
+
+def table_gen(exp1, operator, exp2):
+    rows = int(11)  # integer going to be replaced by params
+    columns = int(17)
+
+    table = np.zeros(shape=(rows, columns), dtype=int)
+
+    length = table[0]
+    col = []
+    for index, num in enumerate(length):
+        col.append(index)
+
+    col = ' '.join(str(e) for e in col)
+    print('  ', col)
+
+    for index, r in enumerate(table):
+        print(index, r)
 
 
 # truth table, first build
